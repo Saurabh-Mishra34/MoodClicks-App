@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6CDDC39"
+    tools:context=".appOptions">
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/llout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tView"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        >
+        <ImageButton
+            android:id="@+id/img1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img1"
+            android:onClick="gotoMusic"
+            />
+        <ImageButton
+            android:id="@+id/img2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img_2"
+            android:layout_marginLeft="30dp"
+            android:onClick="vidplayer"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

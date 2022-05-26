@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".settingsActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sttview"
+        android:background="@color/pink"
+        android:text="Settings"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rv0"
+        android:layout_below="@+id/sttview"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rv1"
+            android:padding="16dp"
+            android:background="@drawable/actionbar"
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imv1"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="Account"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rv2"
+            android:padding="16dp"
+            android:layout_below="@+id/rv1"
+            android:background="@drawable/actionbar"
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imv2"
+                android:src="@drawable/ic_baseline_notifications_24"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="Notifications"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rv3"
+            android:layout_below="@+id/rv2"
+            android:padding="16dp"
+            android:background="@drawable/actionbar"
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imv3"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="Privacy"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rv4"
+            android:layout_below="@+id/rv3"
+            android:padding="16dp"
+            android:background="@drawable/actionbar"
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imv4"
+                android:src="@drawable/ic_baseline_security_24"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname4"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="Security"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rv5"
+            android:layout_below="@+id/rv4"
+            android:padding="16dp"
+            android:background="@drawable/actionbar"
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imv5"
+                android:src="@drawable/ic_baseline_ads_click_24"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname5"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="Ads"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rv6"
+            android:layout_below="@+id/rv5"
+            android:padding="16dp"
+            android:background="@drawable/actionbar"
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imv6"
+                android:src="@drawable/ic_baseline_info_24"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname6"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="About"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rv7"
+            android:layout_below="@+id/rv6"
+            android:padding="16dp"
+            android:background="@drawable/actionbar"
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imv7"
+                android:src="@drawable/ic_baseline_palette_24"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname7"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="Theme"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

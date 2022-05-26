@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".DispVideo">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <VideoView
+        android:id="@+id/mxpvid"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/actionbar"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vid_icons"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:background="@color/pink"
+        android:layout_below="@+id/mxpvid">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_like"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_thumb_up_alt_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_unlike"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id_like"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/ic_baseline_thumb_down_alt_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_share"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id_unlike"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/ic_baseline_share_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_download"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/id_share"
+            android:src="@drawable/ic_baseline_file_download_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_save"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/id_download"
+            android:src="@drawable/ic_baseline_library_add_24"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cmts"
+        android:layout_below="@+id/vid_icons"
+        android:text="Comments"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_comments"
+        android:layout_below="@+id/cmts"
+        android:background="@drawable/actionbar"
+        android:padding="16dp"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/ic1"
+            android:src="@drawable/ic_baseline_person_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmn2"
+            android:layout_toRightOf="@+id/ic1"
+            android:text="Saurabh Mishra"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cm1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="Very beautifully sung!"
+            android:textSize="18sp"
+            android:layout_below="@+id/cmn2"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_comments2"
+        android:layout_below="@+id/id_comments"
+        android:background="@drawable/actionbar"
+        android:padding="16dp"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/ic2"
+            android:src="@drawable/ic_baseline_person_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmn3"
+            android:layout_toRightOf="@+id/ic2"
+            android:text="Vrunda Patel"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cm2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="Soulfull voice"
+            android:textSize="18sp"
+            android:layout_below="@+id/cmn3"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_comments3"
+        android:layout_below="@+id/id_comments2"
+        android:background="@drawable/actionbar"
+        android:padding="16dp"
+        >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/ic3"
+            android:src="@drawable/ic_baseline_person_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmn4"
+            android:layout_toRightOf="@+id/ic3"
+            android:text="Ruchi Gohil"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cm3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="Last Comment"
+            android:textSize="18sp"
+            android:layout_below="@+id/cmn4"
+            />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

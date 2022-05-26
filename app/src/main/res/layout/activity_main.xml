@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E91E7D"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="65dp"
+        />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="username"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/ed3"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="re enter password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/ed3"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbmale"
+            android:text="Male"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20dp"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbfemale"
+            android:text="Female"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+
+            />
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:onClick="registeration"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        />
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sign in"
+        android:layout_below="@+id/register"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        android:backgroundTint="#4FAF4C"
+        android:onClick="gotologin"
+        />
+
+</RelativeLayout>

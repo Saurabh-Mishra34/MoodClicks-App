@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "72265841973",
+    "project_id": "mood-clicks",
+    "storage_bucket": "mood-clicks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72265841973:android:ca8a63ea79c0b0f8de607c",
+        "android_client_info": {
+          "package_name": "com.example.loginpage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72265841973-9t58vnq1bqttvbqu161t89scv9j462jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTjaz42b2_eyy6EJPj_ywZ54F-2uzJmoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72265841973-9t58vnq1bqttvbqu161t89scv9j462jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
